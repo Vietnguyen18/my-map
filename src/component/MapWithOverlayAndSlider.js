@@ -9,8 +9,8 @@ const containerStyle = {
 };
 
 const center = {
-  lat: -3.745,
-  lng: -38.523
+  lat: 21.145,
+  lng: 105.849
 };
 
 const imageURL = anh;
