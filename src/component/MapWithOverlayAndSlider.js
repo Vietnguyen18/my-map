@@ -10,8 +10,8 @@ const containerStyle = {
 };
 
 const dongAnhBounds = [
-  [21.224, 105.7215],
-  [21.0540, 105.952] 
+  [21.228, 105.695],
+  [21.0260, 105.966] 
 ];
 
 const UpdateMapView = ({ center }) => {
