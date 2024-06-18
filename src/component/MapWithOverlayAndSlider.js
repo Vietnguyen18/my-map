@@ -34,13 +34,11 @@ const MapWithOverlayAndSlider = () => {
       try {
         const pdfFile = URL.createObjectURL(file);
 
-        // Using pdfjs library to render PDF pages as images
         pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
         const loadingTask = pdfjs.getDocument(pdfFile);
         const pdf = await loadingTask.promise;
 
-        // Render only the first page of the PDF as an image
         const page = await pdf.getPage(1);
         const scale = 1.5;
         const viewport = page.getViewport({ scale });
